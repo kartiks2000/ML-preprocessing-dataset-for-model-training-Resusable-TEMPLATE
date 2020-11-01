@@ -73,10 +73,15 @@ x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.2,random_stat
 # WE DONT USE THE BELOW CODE VERY OFTEN
 '''
 # Feature Scaling -> Normalizing the range of data/vairiable values
+# Feature Scaling -> Normalizing the range of data/vairiable values
 from sklearn.preprocessing import StandardScaler
 sc_x = StandardScaler()
 x_train = sc_x.fit_transform(x_train)
 x_test = sc_x.transform(x_test)
+
+sc_y = StandardScaler()
+y_train = sc_y.fit_transform(y_train)
+y_test = sc_y.transform(y_test)
 '''
 
 
